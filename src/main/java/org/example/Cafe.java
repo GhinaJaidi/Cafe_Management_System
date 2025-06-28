@@ -22,7 +22,7 @@ public class Cafe extends JFrame implements ActionListener {
         setResizable(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setIconImage(new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 13.06.14_878ff86c.jpg").getImage());
+        setIconImage(new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\15.jpg").getImage());
         getContentPane().setBackground(new Color(240, 240, 240));
         setLayout(new BorderLayout());
 
@@ -102,7 +102,7 @@ public class Cafe extends JFrame implements ActionListener {
         pay.setAlignmentX(Component.CENTER_ALIGNMENT);
         pay.add(Box.createVerticalStrut(10));
         pay.addActionListener(e -> {
-            ImageIcon imageIcon = new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 10.49.05_4d0c0901.jpg");
+            ImageIcon imageIcon = new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\1.jpg");
             Image scaledImage = imageIcon.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
             ImageIcon icon = new ImageIcon(scaledImage);
             if (total > 0) {
@@ -157,19 +157,19 @@ public class Cafe extends JFrame implements ActionListener {
 
         JPanel drinksPanel = new JPanel(new GridLayout(0, 3, 10, 10));
         drinksPanel.setBackground(new Color(242, 238, 229));
-        addProductToPanel(drinksPanel, "Costa Coffee", 7.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_592efdd1.jpg");
-        addProductToPanel(drinksPanel, "Mocha", 9.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_2260d765.jpg");
-        addProductToPanel(drinksPanel, "Caramel Latte", 8.49, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_dcda1410.jpg");
-        addProductToPanel(drinksPanel, "Espresso", 6.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_76a341b8.jpg");
-        addProductToPanel(drinksPanel, "Flat White", 8.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_0e878d4b.jpg");
+        addProductToPanel(drinksPanel, "Costa Coffee", 7.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\7.jpg");
+        addProductToPanel(drinksPanel, "Mocha", 9.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\8.jpg");
+        addProductToPanel(drinksPanel, "Caramel Latte", 8.49, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\11.jpg");
+        addProductToPanel(drinksPanel, "Espresso", 6.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\5.jpg");
+        addProductToPanel(drinksPanel, "Flat White", 8.99, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\3.jpg");
 
         JPanel dessertPanel = new JPanel(new GridLayout(0, 3, 10, 10));
         dessertPanel.setBackground(new Color(242, 238, 229));
-        addProductToPanel(dessertPanel, "Cheesecake", 5.50, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_512fb192.jpg");
-        addProductToPanel(dessertPanel, "Brownie", 4.25, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_f86b9f0f.jpg");
-        addProductToPanel(dessertPanel, "Tiramisu", 6.00, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_d8882a46.jpg");
-        addProductToPanel(dessertPanel, "Chocolate Cake", 5.75, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_ad39c156.jpg");
-        addProductToPanel(dessertPanel, "Baklava", 4.80, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.21.16_04c26145.jpg");
+        addProductToPanel(dessertPanel, "Cheesecake", 5.50, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\6.jpg");
+        addProductToPanel(dessertPanel, "Brownie", 4.25, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\12.jpg");
+        addProductToPanel(dessertPanel, "Tiramisu", 6.00, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\10.jpg");
+        addProductToPanel(dessertPanel, "Chocolate Cake", 5.75, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\9.jpg");
+        addProductToPanel(dessertPanel, "Baklava", 4.80, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\4.jpg");
 
 
         centerCards.add(new JScrollPane(drinksPanel), "Drinks");
@@ -207,11 +207,11 @@ public class Cafe extends JFrame implements ActionListener {
             try {
                 double p = Double.parseDouble(priceStr);
                 if (type == 0) {
-                    addProductToPanel(drinksPanel, name, p, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.44.05_a8c37a15.jpg");
+                    addProductToPanel(drinksPanel, name, p, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\13.jpg");
                     drinksPanel.revalidate();
                     drinksPanel.repaint();
                 } else { // حلو
-                    addProductToPanel(dessertPanel, name, p, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 12.44.05_e0b9f9d5.jpg");
+                    addProductToPanel(dessertPanel, name, p, "C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\14.jpg");
                     dessertPanel.revalidate();
                     dessertPanel.repaint();
                 }
@@ -299,7 +299,7 @@ public class Cafe extends JFrame implements ActionListener {
         JLabel qtyLabel = new JLabel("1");
         JButton inc = new JButton("+");
         JButton dec = new JButton("-");
-        ImageIcon originalIcon = new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\WhatsApp Image 2025-06-24 at 11.00.08_b331f9d3.jpg");
+        ImageIcon originalIcon = new ImageIcon("C:\\Users\\Ghina-PC\\IdeaProjects\\Cafe\\src\\main\\java\\org\\example\\2.jpg");
         Image scaledImage = originalIcon.getImage().getScaledInstance(24, 24, Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         JButton remove = new JButton(scaledIcon);
